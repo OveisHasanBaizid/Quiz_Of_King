@@ -42,12 +42,15 @@ public class ControllerStartGamePanel {
             DataBase.player1 = textFieldPlayer1.getText();
             DataBase.player2 = textFieldPlayer2.getText();
             DataBase.subjectQuestion = SubjectQuestion.setText(comboBox.getValue());
-
-            Stage stage = (Stage) textFieldPlayer1.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game_panel.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 700, 500);
-            stage.setTitle("Game");
-            stage.setScene(scene);
+            if (DataBase.getQuestionsSubject().size() == 0)
+                showMessage("برای این موضوع سوالی وجود ندارد.", "خطا");
+            else {
+                Stage stage = (Stage) textFieldPlayer1.getScene().getWindow();
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game_panel.fxml"));
+                Scene scene = new Scene(fxmlLoader.load(), 700, 500);
+                stage.setTitle("Game");
+                stage.setScene(scene);
+            }
         }
     }
 

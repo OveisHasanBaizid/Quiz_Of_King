@@ -10,7 +10,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException, ClassNotFoundException {
-   //     DataBase.readQuestionFromFile();
+        DataBase.readQuestionFromFile();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main_panel.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 360, 400);
         stage.setTitle("Quiz Of King");
