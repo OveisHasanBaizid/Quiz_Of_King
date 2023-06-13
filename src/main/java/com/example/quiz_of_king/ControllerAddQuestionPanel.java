@@ -47,6 +47,7 @@ public class ControllerAddQuestionPanel {
         Stage stage = (Stage) textAreaText.getScene().getWindow();
         stage.close();
     }
+
     public void showMessage(String message, String type) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         if (type.equals("خطا"))

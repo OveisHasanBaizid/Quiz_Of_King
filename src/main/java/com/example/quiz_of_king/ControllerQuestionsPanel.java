@@ -17,7 +17,7 @@ public class ControllerQuestionsPanel {
 
     public void clickBtnSubject(ActionEvent actionEvent) throws IOException {
         Button button = (Button) actionEvent.getSource();
-        switch (button.getText()){
+        switch (button.getText()) {
             case "مذهبی" -> setPanel(SubjectQuestion.Religious);
             case "ورزشی" -> setPanel(SubjectQuestion.Sports);
             case "جغرافیا" -> setPanel(SubjectQuestion.Geography);
@@ -27,6 +27,7 @@ public class ControllerQuestionsPanel {
             case "هوش" -> setPanel(SubjectQuestion.IQ);
         }
     }
+
     public void setPanel(SubjectQuestion subjectQuestion) throws IOException {
         DataBase.subjectQuestion = subjectQuestion;
         FXMLLoader loader = new FXMLLoader();
@@ -35,6 +36,7 @@ public class ControllerQuestionsPanel {
         panel.getChildren().clear();
         panel.getChildren().add(root);
     }
+
     public void exit() throws IOException {
         Stage stage = (Stage) panel.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main_panel.fxml"));

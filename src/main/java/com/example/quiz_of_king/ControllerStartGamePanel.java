@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -16,11 +15,11 @@ import java.util.ArrayList;
 
 public class ControllerStartGamePanel {
     @FXML
-    TextField textFieldPlayer1 , textFieldPlayer2;
+    TextField textFieldPlayer1, textFieldPlayer2;
     @FXML
     ComboBox<String> comboBox;
 
-    public void initialize(){
+    public void initialize() {
         ArrayList<String> strings = new ArrayList<>();
         strings.add("مذهبی");
         strings.add("ورزشی");
@@ -31,14 +30,15 @@ public class ControllerStartGamePanel {
         strings.add("هوش");
         comboBox.setItems(FXCollections.observableArrayList(strings));
     }
+
     public void start() throws IOException {
         if (textFieldPlayer1.getText().isEmpty())
-            showMessage("نام بازیکن اول وارد نشده است.","خطا");
+            showMessage("نام بازیکن اول وارد نشده است.", "خطا");
         else if (textFieldPlayer2.getText().isEmpty())
-            showMessage("نام بازیکن دوم وارد نشده است.","خطا");
-        else if (comboBox.getValue()==null)
-            showMessage("موضوع سوالات انتخاب نشده است.","خطا");
-        else{
+            showMessage("نام بازیکن دوم وارد نشده است.", "خطا");
+        else if (comboBox.getValue() == null)
+            showMessage("موضوع سوالات انتخاب نشده است.", "خطا");
+        else {
             DataBase.player1 = textFieldPlayer1.getText();
             DataBase.player2 = textFieldPlayer2.getText();
             DataBase.subjectQuestion = SubjectQuestion.setText(comboBox.getValue());
@@ -50,6 +50,7 @@ public class ControllerStartGamePanel {
             stage.setScene(scene);
         }
     }
+
     public void exit() throws IOException {
         Stage stage = (Stage) textFieldPlayer1.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main_panel.fxml"));
@@ -57,6 +58,7 @@ public class ControllerStartGamePanel {
         stage.setTitle("Quiz Of King");
         stage.setScene(scene);
     }
+
     public void showMessage(String message, String type) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         if (type.equals("خطا"))

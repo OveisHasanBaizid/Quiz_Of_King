@@ -2,11 +2,11 @@ package com.example.quiz_of_king;
 
 import java.io.Serializable;
 
-public enum SubjectQuestion  implements Serializable {
+public enum SubjectQuestion implements Serializable {
     Religious, Sports, Geography, Art, Math, Language, IQ;
 
-    public String getText(){
-        switch (this){
+    public String getText() {
+        switch (this) {
             case Religious -> {
                 return "مذهبی";
             }
@@ -14,13 +14,13 @@ public enum SubjectQuestion  implements Serializable {
                 return "ورزشی";
             }
             case Geography -> {
-                return"جفرافیا";
+                return "جفرافیا";
             }
             case Art -> {
                 return "هنر";
             }
             case Math -> {
-                return"ریاضی";
+                return "ریاضی";
             }
             case Language -> {
                 return "زبان";
@@ -30,8 +30,9 @@ public enum SubjectQuestion  implements Serializable {
             }
         }
     }
-    public static SubjectQuestion setText(String s){
-        switch (s){
+
+    public static SubjectQuestion setText(String s) {
+        switch (s) {
             case "مذهبی" -> {
                 return Religious;
             }

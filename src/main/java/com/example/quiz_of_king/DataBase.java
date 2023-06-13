@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class DataBase {
-    static String player1 , player2;
+    static String player1, player2;
     public static ArrayList<Question> questions = new ArrayList<>();
     public static SubjectQuestion subjectQuestion;
 

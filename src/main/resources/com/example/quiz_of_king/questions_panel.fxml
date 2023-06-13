@@ -1,57 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.*?>
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quiz_of_king.ControllerQuestionsPanel">
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="469.0" layoutX="486.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="469.0" layoutX="11.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="465.0" />
-   <Label layoutX="547.0" layoutY="38.0" text="موضوع">
-      <font>
-         <Font name="System Bold" size="24.0" />
-      </font>
-   </Label>
-   <Button layoutX="507.0" layoutY="94.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="مذهبی">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="145.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="ورزشی">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="جغرافیا">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="هنر">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="287.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="ریاضی">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="334.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="زبان">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="380.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0" prefWidth="159.0" text="هوش">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Button layoutX="507.0" layoutY="428.0" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="159.0" text="بازگشت">
-      <font>
-         <Font size="16.0" />
-      </font>
-   </Button>
-   <Pane fx:id="panel" layoutX="13.0" layoutY="19.0" prefHeight="464.0" prefWidth="460.0" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.quiz_of_king.ControllerQuestionsPanel">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="469.0" layoutX="486.0" layoutY="16.0" stroke="BLACK"
+               strokeType="INSIDE" width="200.0"/>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="469.0" layoutX="11.0" layoutY="16.0" stroke="BLACK"
+               strokeType="INSIDE" width="465.0"/>
+    <Label layoutX="547.0" layoutY="38.0" text="موضوع">
+        <font>
+            <Font name="System Bold" size="24.0"/>
+        </font>
+    </Label>
+    <Button layoutX="507.0" layoutY="94.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="مذهبی">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="145.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="ورزشی">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="جغرافیا">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="هنر">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="287.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="ریاضی">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="334.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="زبان">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="380.0" mnemonicParsing="false" onAction="#clickBtnSubject" prefHeight="35.0"
+            prefWidth="159.0" text="هوش">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Button layoutX="507.0" layoutY="428.0" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="159.0"
+            text="بازگشت">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Button>
+    <Pane fx:id="panel" layoutX="13.0" layoutY="19.0" prefHeight="464.0" prefWidth="460.0"/>
 </Pane>

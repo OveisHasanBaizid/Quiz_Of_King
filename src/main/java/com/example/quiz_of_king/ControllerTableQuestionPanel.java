@@ -41,7 +41,7 @@ public class ControllerTableQuestionPanel {
                         super.updateItem(item, empty);
 
                         if (!empty) {
-                            setText(this.getTableRow().getIndex()+1 + "");
+                            setText(this.getTableRow().getIndex() + 1 + "");
                         } else {
                             setText("");
                         }

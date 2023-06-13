@@ -12,17 +12,20 @@
             <Font size="36.0"/>
         </font>
     </Label>
-    <Button onAction="#btnStart" layoutX="83.0" layoutY="159.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="202.0" text="شروع بازی">
+    <Button onAction="#btnStart" layoutX="83.0" layoutY="159.0" mnemonicParsing="false" prefHeight="41.0"
+            prefWidth="202.0" text="شروع بازی">
         <font>
             <Font name="System Bold" size="14.0"/>
         </font>
     </Button>
-    <Button onAction="#btnQuestions" layoutX="83.0" layoutY="233.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="202.0" text="سوالات">
+    <Button onAction="#btnQuestions" layoutX="83.0" layoutY="233.0" mnemonicParsing="false" prefHeight="41.0"
+            prefWidth="202.0" text="سوالات">
         <font>
             <Font name="System Bold" size="14.0"/>
         </font>
     </Button>
-    <Button onAction="#btnExit" layoutX="83.0" layoutY="310.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="202.0" text="خروج">
+    <Button onAction="#btnExit" layoutX="83.0" layoutY="310.0" mnemonicParsing="false" prefHeight="41.0"
+            prefWidth="202.0" text="خروج">
         <font>
             <Font name="System Bold" size="14.0"/>
         </font>
