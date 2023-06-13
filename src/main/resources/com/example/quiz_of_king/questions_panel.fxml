@@ -53,5 +53,5 @@
          <Font size="16.0" />
       </font>
    </Button>
-   <Pane fx:id="panel" layoutX="11.0" layoutY="16.0" prefHeight="469.0" prefWidth="465.0" />
+   <Pane fx:id="panel" layoutX="13.0" layoutY="19.0" prefHeight="464.0" prefWidth="460.0" />
 </Pane>

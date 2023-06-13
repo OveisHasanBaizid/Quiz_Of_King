@@ -3,22 +3,30 @@ package com.example.quiz_of_king;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javafx.util.Callback;
+
+import java.io.IOException;
 
 public class ControllerTableQuestionPanel {
     @FXML
+    Label title;
+    @FXML
     TableView<Question> tableView;
-
     @FXML
     TableColumn<Question, String> columnText;
     @FXML
-    TableColumn<Question,Question> columnNumber;
+    TableColumn<Question, Question> columnNumber;
 
     public void initialize() {
+        title.setText(DataBase.subjectQuestion.getText());
         setToTable();
     }
 
@@ -46,5 +54,14 @@ public class ControllerTableQuestionPanel {
 
         ObservableList<Question> data = FXCollections.observableArrayList(DataBase.getQuestionsSubject());
         tableView.setItems(data);
+    }
+    public void addQuestion() throws IOException, InterruptedException {
+         Stage mainStage = (Stage) title.getScene().getWindow();
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("add_question_panel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 360, 400);
+        stage.setTitle("Quiz Of King");
+        stage.setScene(scene);
+        stage.showAndWait();
     }
 }

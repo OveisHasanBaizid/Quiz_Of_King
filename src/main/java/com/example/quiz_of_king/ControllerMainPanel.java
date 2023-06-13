@@ -21,7 +21,7 @@ public class ControllerMainPanel {
     }
     public void btnQuestions() throws IOException {
         Stage stage = (Stage) title.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game_panel.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("questions_panel.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 700, 500);
         stage.setTitle("Game");
         stage.setScene(scene);
