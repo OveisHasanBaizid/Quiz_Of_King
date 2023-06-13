@@ -1,5 +1,6 @@
 package com.example.quiz_of_king;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -141,5 +142,43 @@ public class ControllerGamePanel {
                 , array[1], score, array[2]);
         showMessage(text);
         back();
+    }
+
+    public void answer1(ActionEvent actionEvent) throws IOException {
+        RadioButton btn = (RadioButton) group1.getSelectedToggle();
+        if (btn==null)
+            return;
+        if (btn.getText().equals(questions.get(index).getAnswer())) {
+            labelScore1.setText(Integer.parseInt(labelScore1.getText())+1+"");
+            index++;
+            if (index >= questions.size())
+                endQuestion();
+            else
+                setInfoQuestion();
+        }
+    }
+
+    public void answer2(ActionEvent actionEvent) throws IOException {
+        RadioButton btn = (RadioButton) group2.getSelectedToggle();
+        if (btn==null)
+            return;
+        if (btn.getText().equals(questions.get(index).getAnswer())){
+            labelScore2.setText(Integer.parseInt(labelScore2.getText())+1+"");
+            index++;
+            if (index >= questions.size())
+                endQuestion();
+            else
+                setInfoQuestion();
+        }
+    }
+    public void endQuestion() throws IOException {
+        if (Integer.parseInt(labelScore1.getText())>Integer.parseInt(labelScore2.getText()))
+            endGame(labelPlayer1.getText(), Integer.parseInt(labelScore1.getText()));
+        else if (Integer.parseInt(labelScore1.getText())<Integer.parseInt(labelScore2.getText()))
+            endGame(labelPlayer2.getText(), Integer.parseInt(labelScore2.getText()));
+        else{
+            showMessage("بازی مساوی به اخر رسید.");
+            back();
+        }
     }
 }

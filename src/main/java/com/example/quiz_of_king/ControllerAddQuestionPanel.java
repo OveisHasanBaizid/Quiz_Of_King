@@ -35,6 +35,7 @@ public class ControllerAddQuestionPanel {
             showMessage("گزینه درست انتخاب نشده است.","خطا");
         else{
             RadioButton radioButton = (RadioButton)group.getSelectedToggle();
+
             Question question = new Question(textAreaText.getText(),DataBase.subjectQuestion
                     ,radioButton.getText(),textFieldOption1.getText(),textFieldOption2.getText(),
                     textFieldOption3.getText(),textFieldOption4.getText());

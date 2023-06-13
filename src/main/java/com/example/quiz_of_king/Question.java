@@ -13,11 +13,11 @@ public class Question implements Serializable {
             , String option1, String option2, String option3, String option4) {
         this.text = text;
         this.subject = subject;
-        this.answer = answer;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
         this.option4 = option4;
+        setAnswer(answer);
     }
 
     public String getText() {
@@ -41,7 +41,14 @@ public class Question implements Serializable {
     }
 
     public void setAnswer(String answer) {
-        this.answer = answer;
+        if (answer.equals("1"))
+            this.answer = option1;
+        else if (answer.equals("2"))
+            this.answer = option2;
+        else if (answer.equals("3"))
+            this.answer = option3;
+        else if (answer.equals("4"))
+            this.answer = option4;
     }
 
     public String getOption1() {
