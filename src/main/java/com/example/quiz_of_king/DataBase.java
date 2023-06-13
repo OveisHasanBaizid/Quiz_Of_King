@@ -6,7 +6,7 @@ public class DataBase {
     public static ArrayList<Question> questions = new ArrayList<>();
     public static SubjectQuestion subjectQuestion;
 
-    public ArrayList<Question> getQuestionsSubject(SubjectQuestion subjectQuestion){
+    public static ArrayList<Question> getQuestionsSubject(){
         ArrayList<Question> list = new ArrayList<>();
         for (Question q:questions) {
             if (q.getSubject()==subjectQuestion)

@@ -4,22 +4,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label layoutX="206.0" layoutY="23.0" text="مذهبی">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <TableView layoutX="18.0" layoutY="67.0" prefHeight="370.0" prefWidth="432.0">
-        <columns>
-          <TableColumn prefWidth="43.20001220703125" text="#" />
-          <TableColumn prefWidth="387.9999885559082" text="سوال" />
-        </columns>
-      </TableView>
-      <Button layoutX="189.0" layoutY="447.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="91.0" text="اضافه کردن">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-   </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0"
+      prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.quiz_of_king.ControllerTableQuestionPanel">
+    <Label layoutX="206.0" layoutY="23.0" text="مذهبی">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <TableView layoutX="18.0" layoutY="67.0" prefHeight="370.0" prefWidth="432.0">
+      <columns>
+          <TableColumn prefWidth="43.20001220703125" text="#"/>
+          <TableColumn prefWidth="387.9999885559082" text="سوال"/>
+      </columns>
+    </TableView>
+    <Button layoutX="189.0" layoutY="447.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="91.0"
+            text="اضافه کردن">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </Button>
 </Pane>

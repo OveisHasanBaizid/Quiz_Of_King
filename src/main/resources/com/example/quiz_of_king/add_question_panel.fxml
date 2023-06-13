@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quiz_of_king.ControllerAddQuestionPanel">
+   <TextArea fx:id="textAreaText" layoutX="17.0" layoutY="45.0" prefHeight="134.0" prefWidth="501.0" />
+   <Label layoutX="452.0" layoutY="15.0" text="متن سوال :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="447.0" layoutY="204.0" text="گزینه 1 :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="textFieldOption1" layoutX="290.0" layoutY="202.0" />
+   <Label layoutX="209.0" layoutY="204.0" text="گزینه 2 :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="textFieldOption2" layoutX="52.0" layoutY="202.0" />
+   <Label layoutX="447.0" layoutY="249.0" text="گزینه 3 :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="textFieldOption3" layoutX="290.0" layoutY="247.0" />
+   <Label layoutX="209.0" layoutY="250.0" text="گزینه 4 :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="textFieldOption4" layoutX="52.0" layoutY="248.0" />
+   <RadioButton fx:id="rb1" layoutX="114.0" layoutY="301.0" mnemonicParsing="false" text="1" />
+   <RadioButton fx:id="rb2" layoutX="162.0" layoutY="301.0" mnemonicParsing="false" text="2" />
+   <RadioButton fx:id="rb3" layoutX="215.0" layoutY="301.0" mnemonicParsing="false" text="3" />
+   <RadioButton fx:id="rb4" layoutX="263.0" layoutY="301.0" mnemonicParsing="false" text="4" />
+   <Label layoutX="314.0" layoutY="300.0" text="گزینه درست :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Button layoutX="26.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="لغو">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button layoutX="446.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="ذخیره">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+</Pane>

@@ -36,9 +36,9 @@ public class ControllerQuestionsPanel {
     }
     public void exit() throws IOException {
         Stage stage = (Stage) panel.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game_panel.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main_panel.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 700, 500);
-        stage.setTitle("Game");
+        stage.setTitle("Quiz Of King");
         stage.setScene(scene);
     }
 }
