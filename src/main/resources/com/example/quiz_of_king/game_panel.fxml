@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <Line endX="-12.999969482421875" endY="430.0" layoutX="364.0" layoutY="70.0" startX="-12.999969482421875"
+         startY="-70.0"/>
+   <Label layoutX="35.0" layoutY="25.0" text="بازیکن 1">
+      <font>
+         <Font name="System Bold" size="24.0"/>
+      </font>
+   </Label>
+   <Label layoutX="376.0" layoutY="25.0" text="بازیکن 2">
+      <font>
+         <Font name="System Bold" size="24.0"/>
+      </font>
+   </Label>
+   <Label layoutX="279.0" layoutY="32.0" text="امتیاز :">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Label layoutX="628.0" layoutY="29.0" text="امتیاز :">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Label layoutX="603.0" layoutY="30.0" text="0">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Label layoutX="255.0" layoutY="33.0" text="0">
+      <font>
+         <Font size="18.0"/>
+      </font>
+   </Label>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecdcb8" height="91.0" layoutX="20.0" layoutY="80.0" stroke="BLACK"
+              strokeType="INSIDE" width="310.0"/>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecdcb8" height="91.0" layoutX="371.0" layoutY="79.0" stroke="BLACK"
+              strokeType="INSIDE" width="310.0"/>
+   <RadioButton layoutX="44.0" layoutY="232.0" mnemonicParsing="false" text="گزینه 1">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="44.0" layoutY="295.0" mnemonicParsing="false" text="گزینه 2">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="44.0" layoutY="356.0" mnemonicParsing="false" text="گزینه 3">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="44.0" layoutY="415.0" mnemonicParsing="false" text="گزینه 4">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="403.0" layoutY="232.0" mnemonicParsing="false" text="گزینه 1">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="403.0" layoutY="295.0" mnemonicParsing="false" text="گزینه 2">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="403.0" layoutY="356.0" mnemonicParsing="false" text="گزینه 3">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+   <RadioButton layoutX="403.0" layoutY="415.0" mnemonicParsing="false" text="گزینه 4">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </RadioButton>
+</Pane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="360.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.quiz_of_king.ControllerMainPanel">
+    <Label layoutX="83.0" layoutY="55.0" text="Quiz Of King" fx:id="title">
+        <font>
+            <Font size="36.0"/>
+        </font>
+    </Label>
+    <Button onAction="#btnStart" layoutX="83.0" layoutY="159.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="202.0" text="شروع بازی">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+    <Button onAction="#btnQuestions" layoutX="83.0" layoutY="233.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="202.0" text="سوالات">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+    <Button onAction="#btnExit" layoutX="83.0" layoutY="310.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="202.0" text="خروج">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+</Pane>
