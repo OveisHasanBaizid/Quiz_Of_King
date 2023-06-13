@@ -4,7 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quiz_of_king.ControllerAddQuestionPanel">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.quiz_of_king.ControllerAddQuestionPanel">
    <TextArea fx:id="textAreaText" layoutX="17.0" layoutY="45.0" prefHeight="134.0" prefWidth="501.0" />
    <Label layoutX="452.0" layoutY="15.0" text="متن سوال :">
       <font>
@@ -44,12 +45,12 @@
          <Font name="System Bold" size="14.0" />
       </font>
    </Label>
-   <Button layoutX="26.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="لغو">
+   <Button onAction="#exit" layoutX="26.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="لغو">
       <font>
          <Font name="System Bold" size="14.0" />
       </font>
    </Button>
-   <Button layoutX="446.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="ذخیره">
+   <Button onAction="#save" layoutX="446.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="ذخیره">
       <font>
          <Font name="System Bold" size="14.0" />
       </font>

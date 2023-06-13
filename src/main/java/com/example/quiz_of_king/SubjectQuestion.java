@@ -1,6 +1,8 @@
 package com.example.quiz_of_king;
 
-public enum SubjectQuestion {
+import java.io.Serializable;
+
+public enum SubjectQuestion  implements Serializable {
     Religious, Sports, Geography, Art, Math, Language, IQ;
 
     public String getText(){

@@ -1,6 +1,8 @@
 package com.example.quiz_of_king;
 
-public class Question {
+import java.io.Serializable;
+
+public class Question implements Serializable {
     private String text;
     private SubjectQuestion subject;
     private String answer;

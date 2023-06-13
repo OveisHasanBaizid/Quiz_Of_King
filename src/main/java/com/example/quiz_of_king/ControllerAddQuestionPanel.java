@@ -5,6 +5,8 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.IOException;
+
 public class ControllerAddQuestionPanel {
     @FXML
     TextArea textAreaText;
@@ -23,7 +25,7 @@ public class ControllerAddQuestionPanel {
         rb4.setToggleGroup(group);
 
     }
-    public void save(){
+    public void save() throws IOException {
         if (textAreaText.getText().isEmpty())
             showMessage("متن سوال نمیتواند خالی باشد.","خطا");
         else if (textFieldOption1.getText().isEmpty() || textFieldOption2.getText().isEmpty()
@@ -36,6 +38,8 @@ public class ControllerAddQuestionPanel {
             Question question = new Question(textAreaText.getText(),DataBase.subjectQuestion
                     ,radioButton.getText(),textFieldOption1.getText(),textFieldOption2.getText(),
                     textFieldOption3.getText(),textFieldOption4.getText());
+            DataBase.addQuestion(question);
+            exit();
             showMessage("سوال با موفقیت اضافه شد.","اطلاعات");
         }
     }

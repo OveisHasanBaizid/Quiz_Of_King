@@ -32,7 +32,6 @@ public class ControllerTableQuestionPanel {
 
     public void setToTable() {
         columnText.setCellValueFactory(new PropertyValueFactory<>("text"));
-
         columnNumber.setCellFactory(new Callback<>() {
             @Override
             public TableCell<Question, Question> call(TableColumn<Question, Question> param) {
@@ -41,8 +40,8 @@ public class ControllerTableQuestionPanel {
                     protected void updateItem(Question item, boolean empty) {
                         super.updateItem(item, empty);
 
-                        if (this.getTableRow() != null && item != null) {
-                            setText(this.getTableRow().getIndex() + "");
+                        if (!empty) {
+                            setText(this.getTableRow().getIndex()+1 + "");
                         } else {
                             setText("");
                         }
@@ -55,13 +54,17 @@ public class ControllerTableQuestionPanel {
         ObservableList<Question> data = FXCollections.observableArrayList(DataBase.getQuestionsSubject());
         tableView.setItems(data);
     }
-    public void addQuestion() throws IOException, InterruptedException {
-         Stage mainStage = (Stage) title.getScene().getWindow();
+
+    public void addQuestion() throws IOException {
         Stage stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("add_question_panel.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 360, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 535, 400);
         stage.setTitle("Quiz Of King");
         stage.setScene(scene);
         stage.showAndWait();
+        new Thread(() -> {
+            while (stage.isShowing()) ;
+            setToTable();
+        }).start();
     }
 }
