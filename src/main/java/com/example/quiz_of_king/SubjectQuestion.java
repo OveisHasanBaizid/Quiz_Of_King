@@ -30,4 +30,29 @@ public enum SubjectQuestion  implements Serializable {
             }
         }
     }
+    public static SubjectQuestion setText(String s){
+        switch (s){
+            case "مذهبی" -> {
+                return Religious;
+            }
+            case "ورزشی" -> {
+                return Sports;
+            }
+            case "جفرافیا" -> {
+                return Geography;
+            }
+            case "هنر" -> {
+                return Art;
+            }
+            case "ریاضی" -> {
+                return Math;
+            }
+            case "زبان" -> {
+                return Language;
+            }
+            default -> {
+                return IQ;
+            }
+        }
+    }
 }

@@ -1,89 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
-      prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
-   <Line endX="-12.999969482421875" endY="430.0" layoutX="364.0" layoutY="70.0" startX="-12.999969482421875"
-         startY="-70.0"/>
-   <Label layoutX="35.0" layoutY="25.0" text="بازیکن 1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <Line endX="-12.999969482421875" endY="430.0" layoutX="364.0" layoutY="70.0" startX="-12.99993896484375" startY="-22.299999237060547" />
+   <Label layoutX="35.0" layoutY="56.0" text="بازیکن 1">
       <font>
-         <Font name="System Bold" size="24.0"/>
+         <Font name="System Bold" size="24.0" />
       </font>
    </Label>
-   <Label layoutX="376.0" layoutY="25.0" text="بازیکن 2">
+   <Label layoutX="376.0" layoutY="56.0" text="بازیکن 2">
       <font>
-         <Font name="System Bold" size="24.0"/>
+         <Font name="System Bold" size="24.0" />
       </font>
    </Label>
-   <Label layoutX="279.0" layoutY="32.0" text="امتیاز :">
+   <Label layoutX="279.0" layoutY="63.0" text="امتیاز :">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Label>
-   <Label layoutX="628.0" layoutY="29.0" text="امتیاز :">
+   <Label layoutX="628.0" layoutY="60.0" text="امتیاز :">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Label>
-   <Label layoutX="603.0" layoutY="30.0" text="0">
+   <Label layoutX="603.0" layoutY="61.0" text="0">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Label>
-   <Label layoutX="255.0" layoutY="33.0" text="0">
+   <Label layoutX="255.0" layoutY="63.0" text="0">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Label>
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecdcb8" height="91.0" layoutX="20.0" layoutY="80.0" stroke="BLACK"
-              strokeType="INSIDE" width="310.0"/>
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecdcb8" height="91.0" layoutX="371.0" layoutY="79.0" stroke="BLACK"
-              strokeType="INSIDE" width="310.0"/>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecdcb8" height="91.0" layoutX="20.0" layoutY="108.0" stroke="BLACK" strokeType="INSIDE" width="310.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ecdcb8" height="91.0" layoutX="371.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="310.0" />
    <RadioButton layoutX="44.0" layoutY="232.0" mnemonicParsing="false" text="گزینه 1">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
-   <RadioButton layoutX="44.0" layoutY="295.0" mnemonicParsing="false" text="گزینه 2">
+   <RadioButton layoutX="44.0" layoutY="276.0" mnemonicParsing="false" text="گزینه 2">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
-   <RadioButton layoutX="44.0" layoutY="356.0" mnemonicParsing="false" text="گزینه 3">
+   <RadioButton layoutX="44.0" layoutY="325.0" mnemonicParsing="false" text="گزینه 3">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
-   <RadioButton layoutX="44.0" layoutY="415.0" mnemonicParsing="false" text="گزینه 4">
+   <RadioButton layoutX="44.0" layoutY="374.0" mnemonicParsing="false" text="گزینه 4">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
    <RadioButton layoutX="403.0" layoutY="232.0" mnemonicParsing="false" text="گزینه 1">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
-   <RadioButton layoutX="403.0" layoutY="295.0" mnemonicParsing="false" text="گزینه 2">
+   <RadioButton layoutX="403.0" layoutY="279.0" mnemonicParsing="false" text="گزینه 2">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
-   <RadioButton layoutX="403.0" layoutY="356.0" mnemonicParsing="false" text="گزینه 3">
+   <RadioButton layoutX="403.0" layoutY="326.0" mnemonicParsing="false" text="گزینه 3">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
-   <RadioButton layoutX="403.0" layoutY="415.0" mnemonicParsing="false" text="گزینه 4">
+   <RadioButton layoutX="403.0" layoutY="376.0" mnemonicParsing="false" text="گزینه 4">
       <font>
-         <Font size="14.0"/>
+         <Font size="14.0" />
       </font>
    </RadioButton>
+   <Button layoutX="26.0" layoutY="446.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="بعدی">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button layoutX="273.0" layoutY="446.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="خروج">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button layoutX="373.0" layoutY="446.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="بعدی">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Button layoutX="620.0" layoutY="446.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="60.0" text="خروج">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="203.0" stroke="BLACK" strokeType="INSIDE" width="298.0" />
+   <Label layoutX="387.0" layoutY="16.0" text="موضوع سوالات :">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField editable="false" layoutX="218.0" layoutY="10.0" prefHeight="30.0" prefWidth="153.0" style="-fx-alignment: center;" text="مذهبی">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
 </Pane>
